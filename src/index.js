@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Snowfall from 'react-snowfall'
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "./redux/store";
@@ -8,9 +9,12 @@ import "./styles/reset.css";
 import "./styles/theme.css";
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <div style={{ height: 1000, background: '#282c34', position: 'relative' }}>
+    <Snowfall />
+    <Provider store={store}>
+      <App />
+    </Provider>,
+  </div>,
   document.getElementById("root")
 );
 
