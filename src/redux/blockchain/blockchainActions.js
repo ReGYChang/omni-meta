@@ -1,7 +1,8 @@
 // constants
 import Web3EthContract from "web3-eth-contract";
 import Web3 from "web3";
-import SmartContract from "../../contracts/NCC.json";
+// import SmartContract from "../../contracts/OmniMeta.json";
+import SmartContract from "../../contracts/OmniMeta.json";
 // log
 import { fetchData } from "../data/dataActions";
 

@@ -8,15 +8,15 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract NerdyCoderClones is ERC721Enumerable, Ownable {
+contract OmniMeta is ERC721Enumerable, Ownable {
   using Strings for uint256;
 
   string public baseURI;
   string public baseExtension = ".json";
-  uint256 public cost = 100 ether;
+  uint256 public cost = 0 ether;
   uint256 public maxSupply = 1000;
-  uint256 public maxMintAmount = 20;
-  bool public paused = false;
+  uint256 public maxMintAmount = 5;
+  bool public paused = true;
   mapping(address => bool) public whitelisted;
 
   constructor(
