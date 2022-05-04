@@ -188,7 +188,7 @@ function App() {
                         getData();
                       }}
                     >
-                      {claimingNft ? "WAITING OwO" : "MINT"}
+                      {claimingNft ? "WAITING <3" : "MINT"}
                     </StyledButton>
                   </s.Container>
                 )}
