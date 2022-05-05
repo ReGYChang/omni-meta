@@ -25,7 +25,7 @@ contract OmniMeta is ERC721Enumerable, Ownable {
     string memory _initBaseURI
   ) ERC721(_name, _symbol) {
     setBaseURI(_initBaseURI);
-    mint(msg.sender, 20);
+    // mint(msg.sender, 20);
   }
 
   // internal

@@ -66,7 +66,7 @@ function App() {
       .mint(blockchain.account, _amount)
       .send({
         gasLimit: "300000",
-        to: "0xeBd24AdF9162E4117B8E5bBE644a0dAb8B74A9a9",//"0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+        to: "0xfcf730fcf314c47b9d106998fc5bf714efb61c4e",//"0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
         from: blockchain.account,
         value: blockchain.web3.utils.toWei((0).toString(), "ether"),
       })
@@ -77,7 +77,7 @@ function App() {
       })
       .then((receipt) => {
         setFeedback(
-          "WOW, you now own a Omni Meta. go visit Opensea.io to view it."
+          "Wow, you now own a Omni Meta. go visit Opensea.io to view it."
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
