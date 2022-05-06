@@ -66,7 +66,7 @@ function App() {
       .mint(blockchain.account, _amount)
       .send({
         gasLimit: "300000",
-        to: "0xfcf730fcf314c47b9d106998fc5bf714efb61c4e",//"0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+        to: "0x7C5Cc3313Cbeb7cFF9f439379B56803d269EF5e4",//"0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
         from: blockchain.account,
         value: blockchain.web3.utils.toWei((0).toString(), "ether"),
       })
@@ -111,7 +111,7 @@ function App() {
             ai={"center"}
             style={{ backgroundColor: "", padding: 24 }}
           >
-            {Number(data.totalSupply) == 1000 ? (
+            {Number(data.totalSupply) == 100 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
@@ -166,7 +166,7 @@ function App() {
                       <s.TextTitle
                         style={{ textAlign: "center", fontSize: 30, fontWeight: "bold" }}
                       >
-                        {data.totalSupply}/1000
+                        {/* {data.totalSupply}/100 */}
                       </s.TextTitle>
                     </s.Container>
                     {blockchain.errorMsg !== "" ? (

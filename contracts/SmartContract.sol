@@ -15,7 +15,7 @@ contract OmniMeta is ERC721Enumerable, Ownable {
   string public baseExtension = ".json";
   uint256 public cost = 0 ether;
   uint256 public maxSupply = 1000;
-  uint256 public maxMintAmount = 5;
+  uint256 public maxMintAmount = 1;
   bool public paused = true;
   mapping(address => bool) public whitelisted;
 
